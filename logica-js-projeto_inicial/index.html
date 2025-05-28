@@ -18,12 +18,13 @@
             <img src="./img/robot.png" alt="robô mergulhador" class="container__imagem-robo" />
             <div class="titulo">
                 <h2>Vamos começar a jogar Número Secreto!</h2>
-                <button type="submit" class="comecar" onclick="vamoComeca()">COMEÇAR</button>
+                <button type="submit" class="comecar">COMEÇAR</button>
             </div>
             <div class="jogo">
-                <p>Insira um número de 1 a 100 e tente acertar o número secreto!</p>
+                <label>Insira um número de 1 a 100 e tente acertar o número secreto!</label>
                 <input type="number" name="inserirNumero" id="numeroEscolhido" placeholder="Digite aqui..." min="1" max="100">
-                <button type="submit" id="verificar" onclick="comecarJogo()">VERIFICAR</button>
+                <button type="submit" id="verificar">VERIFICAR</button>
+                <p id="chutes">Números já inseridos: <span id="numerosChutados"> </span> </p>
                 <p id="resultado"></p>
             </div>
             <div class="container__informacoes">
@@ -32,7 +33,7 @@
                     <p>Você <span class="container__texto-azul">acertou!</span></p>
                     <p>Você descobriu o número secreto!</p>
                     <p id="tentativas"></p>
-                <button type="submit" class="comecar" onclick="comecarJogo()">CONTINUAR JOGANDO</button>
+                <button type="submit" class="reiniciarJogo">CONTINUAR JOGANDO</button>
                 </div>
             </div>
         </div>

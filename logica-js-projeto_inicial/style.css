@@ -110,3 +110,9 @@ button{
     color: rgb(0, 183, 255);
     margin: 10px;
 }
+
+#chutes, #numerosChutados{
+    font-size: 20px;
+    color: silver;
+    margin-bottom: 20px;
+}
